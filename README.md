@@ -117,13 +117,13 @@ Realizar a interceptação e análise de mensagens publicadas pelo ESP32 no brok
 
 <div align="center">
   <sub>Figura 1 - Imagem do MqttExplorer - Publicando mensagem</sub><br>
-  <img src="./assets/mqtt.png" width="600px" height="auto"><br>
+  <img src="./assets/mqtt.jpg" width="600px" height="auto"><br>
   <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 <div align="center">
   <sub>Figura 2 - Imagem do WireShark</sub><br>
-  <img src="./assets/cpfin.png" width="600px" height="auto"><br>
+  <img src="./assets/cpfin.jpg" width="600px" height="auto"><br>
   <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
