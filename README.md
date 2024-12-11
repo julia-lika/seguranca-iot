@@ -137,6 +137,7 @@ A imagem representa a captura de tráfego de rede utilizando o Wireshark, onde f
   ```json
   {"449.408.468-91"}
 ´´´
+
 Este payload demonstra a transmissão de um dado sensível, como CPF, de forma não criptografada.
 
 ### **Detalhes da Captura**
