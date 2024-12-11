@@ -247,7 +247,7 @@ Demonstrar como a exposição de tópicos públicos no broker MQTT compromete a 
 
 ## **Vídeo**
 
-Confira o vídeo de demonstração da injeção: [Link para o vídeo(https://drive.google.com/drive/folders/1rYCFgfHRnIQJ2FpryTkRZxt0tyquWyJ-?usp=sharing)].
+Confira o vídeo de demonstração da injeção: [[Link para o vídeo](https://drive.google.com/drive/folders/1rYCFgfHRnIQJ2FpryTkRZxt0tyquWyJ-?usp=sharing)].
 
 
 ---
