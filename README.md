@@ -127,6 +127,45 @@ Realizar a interceptação e análise de mensagens publicadas pelo ESP32 no brok
   <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
+ ### **Descrição**
+A imagem representa a captura de tráfego de rede utilizando o Wireshark, onde foi interceptada uma mensagem MQTT publicada pelo dispositivo ESP32 em um broker público. Esta análise foi realizada para avaliar a segurança da comunicação e identificar possíveis vulnerabilidades.
+
+  ### **Contexto Técnico**
+- **Protocolo**: MQTT.
+- **Tópico Capturado**: `instituto/config/cadastro`.
+- **Payload da Mensagem**:
+  ```json
+  {"449.408.468-91"}
+´´´
+Este payload demonstra a transmissão de um dado sensível, como CPF, de forma não criptografada.
+
+### **Detalhes da Captura**
+
+Filtro Aplicado no Wireshark:
+- O filtro utilizado foi:
+  ```plaintext
+  tcp.port == 1883
+´´´
+Esse filtro captura apenas pacotes MQTT que trafegam pela porta padrão do protocolo (1883).
+
+### **Mensagem Publicada**
+O protocolo MQTT apresenta uma mensagem do tipo Publish Message publicada no tópico específico.
+
+### **Fonte e Destino**
+- Fonte (Source): 192.168.163.22 (possivelmente o endereço IP local do ESP32).
+- Destino (Destination): 52.29.27.70 (endereço IP do broker MQTT público).
+
+### **Vulnerabilidade Identificada**
+A mensagem interceptada evidencia a falta de criptografia na comunicação MQTT, resultando em:
+- Exposição de dados sensíveis para qualquer atacante na mesma rede local.
+- Potencial para ataques de interceptação e replay.
+
+### **Impacto**
+- Confidencialidade Comprometida:
+Qualquer dado sensível enviado (como IDs, CPFs ou comandos) pode ser interceptado e lido por terceiros.
+- Risco de Controle Não Autorizado:
+Um invasor pode capturar e reutilizar a mensagem para executar ações repetidas ou maliciosas.
+
 ---
 
 # ** 2 - Ataque de Injeção de Comandos MQTT**
@@ -276,4 +315,11 @@ A rede Wi-Fi utilizada pelo ESP32 apresenta características que a tornam vulner
 
 
 --- 
+
+
+
+## **Referências**
+1. Random Nerd Tutorials. *ESP32 Web Server*. Disponível em: [https://randomnerdtutorials.com/esp32-web-server-arduino-ide/](https://randomnerdtutorials.com/esp32-web-server-arduino-ide/).
+2. MQTT Explorer. Disponível em: [https://mqtt-explorer.com/](https://mqtt-explorer.com/).
+3. Wireshark Documentation. Disponível em: [https://www.wireshark.org/docs/](https://www.wireshark.org/docs/).
 
