@@ -39,7 +39,7 @@
 
 ## **Ataques Simulados**
 
-### ** 1 - Análise de Tráfego de Rede: Captura de Mensagens MQTT**
+### **1 - Análise de Tráfego de Rede: Captura de Mensagens MQTT**
 
 #### **Objetivo**
 Realizar a interceptação e análise de mensagens publicadas pelo ESP32 no broker MQTT, utilizando o Wireshark, para identificar possíveis vulnerabilidades na comunicação.
