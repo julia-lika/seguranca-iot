@@ -35,6 +35,10 @@
    - Modelos biométricos são manipulados sem criptografia.
    - **Impacto**: Violação de dados sensíveis.
 
+5. **Credenciais Expostas**:
+   - Em meio ao código estão expostas o SSID e a senha de uma rede wifi.
+   - **Impacto**: Insegurança na rede.
+
 ---
 
 ## **Ataques Simulados**
@@ -317,10 +321,14 @@ A rede Wi-Fi utilizada pelo ESP32 apresenta características que a tornam vulner
 
 --- 
 
+## **Conclusões**
+O protótipo desenvolvido apresenta diversas vulnerabilidades relacionadas à segurança, que podem se tornar problemas críticos no futuro. A aula de hoje destacou a importância de considerar a segurança como um aspecto central no desenvolvimento de dispositivos IoT. Ficou evidente que essas questões precisam ser reavaliadas de forma cuidadosa, e medidas corretivas devem ser implementadas para mitigar os riscos identificados e garantir a proteção do sistema contra possíveis ameaças.
 
+---
 
 ## **Referências**
 1. Random Nerd Tutorials. *ESP32 Web Server*. Disponível em: [https://randomnerdtutorials.com/esp32-web-server-arduino-ide/](https://randomnerdtutorials.com/esp32-web-server-arduino-ide/).
 2. MQTT Explorer. Disponível em: [https://mqtt-explorer.com/](https://mqtt-explorer.com/).
 3. Wireshark Documentation. Disponível em: [https://www.wireshark.org/docs/](https://www.wireshark.org/docs/).
+4. Wireshark como usar. Disponível em: [https://www.varonis.com/pt-br/blog/how-to-use-wireshark](https://www.varonis.com/pt-br/blog/how-to-use-wireshark).
 
