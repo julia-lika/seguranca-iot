@@ -169,7 +169,7 @@ Um invasor pode capturar e reutilizar a mensagem para executar ações repetidas
 
 ---
 
-# ** 2 - Ataque de Injeção de Comandos MQTT**
+# **2 - Ataque de Injeção de Comandos MQTT**
 
 ## **Objetivo**
 Demonstrar como a exposição de tópicos públicos no broker MQTT compromete a segurança de um sistema IoT, permitindo que comandos maliciosos sejam enviados manualmente para manipular o sistema.
